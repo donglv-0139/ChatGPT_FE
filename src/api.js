@@ -1,18 +1,19 @@
-export const fetchResponse = async (chat) => {
+export const fetchResponse =  async(chat) => {
     try {
-        const response = await fetch('https://chat-gpt-be-vert.vercel.app/', {
+        // after depoloyment you should change the fetch URL below
+        const response = await fetch('https://chat-gpt-qj4p163j8-donglv-0139.vercel.app/', { 
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                message: chat.map((message) => message.message).join(' \n')
+                message: chat.map((message)=> message.message).join(" \n ")
             })
         })
 
         const data = await response.json()
-        return data;
+        return data
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 }
