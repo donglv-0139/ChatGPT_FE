@@ -30,7 +30,7 @@ function App() {
 
       {/* header */}
       <div className='font-bold  text-2xl flex justify-center items-center mb-3'>
-        <img src='./logo.png' className='w-10' /> Chat With ĐôngĐz
+        <img src='./logo.png' className='w-10' /> ChatWithĐôngĐz
       </div>
 
       {/* body */}
